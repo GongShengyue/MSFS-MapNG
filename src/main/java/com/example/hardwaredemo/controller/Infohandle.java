@@ -3,7 +3,7 @@ package com.example.hardwaredemo.controller;
 import com.example.hardwaredemo.service.CpuService;
 import com.example.hardwaredemo.service.GpuService;
 import com.example.hardwaredemo.service.MotherboardService;
-import com.example.hardwaredemo.service.RAMService;
+//import com.example.hardwaredemo.service.RAMService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,8 +21,8 @@ public class Infohandle {
     @Autowired
     private MotherboardService motherboardService;
 
-    @Autowired
-    private RAMService ramService;
+//    @Autowired
+//    private RAMService ramService;
 
     @Autowired
     private GpuService gpuService;
@@ -34,8 +34,8 @@ public class Infohandle {
         map.put("temprature",cpuService.getTemprature());
         map.put("fanSpeed",cpuService.getFanSpeed());
         map.put("brand",motherboardService.getSystemInfo());
-        map.put("totalRAM",ramService.getTotal());
-        map.put("availableRAM",ramService.getAvailable());
+//        map.put("totalRAM",ramService.getTotal());
+//        map.put("availableRAM",ramService.getAvailable());
         map.put("gpuinfo",gpuService.getGPUinfo());
         return map;
     }
