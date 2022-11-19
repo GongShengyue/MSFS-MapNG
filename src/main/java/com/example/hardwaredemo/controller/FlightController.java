@@ -14,6 +14,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static java.lang.Thread.sleep;
+
 
 /**
  * The interface of Microsoft Flight Simulator 2020
@@ -40,15 +42,34 @@ public class FlightController {
         list.add(new VarEntity("AMBIENT WIND VELOCITY", "knots", SimConnectDataType.FLOAT64));
         list.add(new VarEntity("LIGHT NAV", "Bool", SimConnectDataType.FLOAT64));
         list.add(new VarEntity("GEAR POSITION", "enum", SimConnectDataType.INT32));
-    }
+        list.add(new VarEntity("BRAKE INDICATOR","Position",SimConnectDataType.INT32));
 
+        try {
+            Thread t = new DataThread();
+            t.start();
+            sleep(1001);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    class DataThread extends Thread{
+        @Override
+        public void run(){
+            System.out.println(Thread.currentThread().toString());
+            try {
+                GetVariable.getVarResult(list);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+
+        }
+    }
     @RequestMapping("/getFlightData")
     public Map<String,Object> getData(){
 
         try{
 //            result =getVarResult(list);
-            VarResult result = GetVariable.getVarResult(list);
-            map.put("data",result);
+            map.put("data",GetVariable.varResult);
             map.put("msg","cuccess");
 
         }catch (Exception e) {

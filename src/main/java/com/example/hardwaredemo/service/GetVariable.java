@@ -3,37 +3,20 @@ package com.example.hardwaredemo.service;
 import com.example.hardwaredemo.entity.VarEntity;
 import com.example.hardwaredemo.entity.VarResult;
 import flightsim.simconnect.SimConnect;
-import flightsim.simconnect.SimConnectDataType;
 import flightsim.simconnect.SimConnectPeriod;
-import flightsim.simconnect.config.ConfigurationNotFoundException;
-
 import flightsim.simconnect.recv.*;
-
-import java.io.IOException;
 import java.util.List;
 
 public class GetVariable {
 
 
 
-	private static boolean qudao = false;
-	private static VarResult varResult = new VarResult();
-	private static SimConnect sc;
 
-	private static DispatcherTask dt = null;
-	static {
-		try {
-			sc = new SimConnect("GetVariable", 0);
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		} catch (ConfigurationNotFoundException e) {
-			throw new RuntimeException(e);
-		}
-	}
+	public static VarResult varResult = new VarResult();
 
-	private static int  cid = 0;
+//	private static SimConnect sc;
 
-	private static SimConnectPeriod p = SimConnectPeriod.ONCE;
+
 //		if (args.length > 3) {
 //			p = SimConnectPeriod.valueOf(args[3].toUpperCase());
 //		}
@@ -142,17 +125,19 @@ public class GetVariable {
 //
 //	}
 
-	public  static VarResult  getVarResult(List<VarEntity> list) throws Exception{
+	public  static void  getVarResult(List<VarEntity> list) throws Exception{
 
-
+		SimConnect sc = new SimConnect("GetVariable", 0);
 		for(VarEntity var : list){
 
 			sc.addToDataDefinition(1, var.getVariableName(),var.getUnits(), var.getType());
 
 		}
+		SimConnectPeriod p = SimConnectPeriod.SECOND;
+		int  cid = 0;
 		sc.requestDataOnSimObject(1, 1, cid, p);
 
-		dt= new DispatcherTask(sc);
+		DispatcherTask dt = new DispatcherTask(sc);
 		dt.addOpenHandler(new OpenHandler(){
 			public void handleOpen(SimConnect sender, RecvOpen e) {
 				System.out.println("Connected to " + e.getApplicationName());
@@ -167,43 +152,29 @@ public class GetVariable {
 		dt.addSimObjectDataHandler(new SimObjectDataHandler(){
 			public void handleSimObject(SimConnect sender, RecvSimObjectData e) {
 
-//				System.out.println("Value of '" + e + "' = " + e.getDataFloat64());
-
-
-
-//				for(VarEntity var :list){
-
-//					switch (var.getType()){
-//						case FLOAT64:System.out.println(var.getVariableName()+":"+e.getDataFloat64());break;
-//						case INT32:System.out.println(var.getVariableName()+":"+e.getDataInt32());break;
-//						case STRING32:System.out.println(var.getVariableName()+":"+e.getDataString32());break;
-//					}
-
+//
 			varResult.setPLANE_ALTITUDE(e.getDataFloat64());
 			varResult.setPLANE_LATITUDE(e.getDataFloat64());
 			varResult.setPLANE_LONGITUDE(e.getDataFloat64());
 			varResult.setHEADING_INDICATOR(e.getDataFloat64());
 			varResult.setAirspeed_Indicated(e.getDataFloat64());
 			varResult.setFLAPS_HANDLE_INDEX(e.getDataFloat64());
-			varResult.setFLAPS_HANDLE_INDEX(e.getDataFloat64());
+			varResult.setFLAP_POSITION_SET(e.getDataFloat64());
 			varResult.setAMBIENT_PRECIP_RATE(e.getDataFloat64());
 			varResult.setAMBIENT_WIND_DIRECTION(e.getDataFloat64());
 			varResult.setAMBIENT_WIND_VELOCITY(e.getDataFloat64());
 			varResult.setLIGHT_NAV(e.getDataFloat64());
 			varResult.setGEAR_POSITION(e.getDataInt32());
 			varResult.setBRAKE_INDICATOR(e.getDataInt32());
-
-			qudao = true;
+			System.out.println(varResult.toString());
 			}
 		});
+
 		while (true) {
 			sc.callDispatch(dt);
-			if(qudao == true){
-//				qudao =false;
-				return varResult;
 			}
 		}
 
 
-	}
+
 }
