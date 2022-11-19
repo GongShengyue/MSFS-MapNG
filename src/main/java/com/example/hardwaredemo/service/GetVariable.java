@@ -156,7 +156,7 @@ public class GetVariable {
 			varResult.setPLANE_ALTITUDE(e.getDataFloat64());
 			varResult.setPLANE_LATITUDE(e.getDataFloat64());
 			varResult.setPLANE_LONGITUDE(e.getDataFloat64());
-			varResult.setHEADING_INDICATOR(e.getDataFloat64());
+			varResult.setPLANE_HEADING_DEGREES_GYRO(e.getDataFloat64());
 			varResult.setAirspeed_Indicated(e.getDataFloat64());
 			varResult.setFLAPS_HANDLE_INDEX(e.getDataFloat64());
 			varResult.setFLAP_POSITION_SET(e.getDataFloat64());

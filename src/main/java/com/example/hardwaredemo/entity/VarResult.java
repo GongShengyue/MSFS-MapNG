@@ -29,14 +29,6 @@ public class VarResult {
         this.PLANE_LONGITUDE = PLANE_LONGITUDE;
     }
 
-    public double getHEADING_INDICATOR() {
-        return HEADING_INDICATOR;
-    }
-
-    public void setHEADING_INDICATOR(double HEADING_INDICATOR) {
-        this.HEADING_INDICATOR = HEADING_INDICATOR;
-    }
-
     public double getAirspeed_Indicated() {
         return Airspeed_Indicated;
     }
@@ -102,26 +94,15 @@ public class VarResult {
     }
 
     double PLANE_LONGITUDE;//:0.013974632908878046
-    double HEADING_INDICATOR;//:4.348697193215663
+    double PLANE_HEADING_DEGREES_GYRO;
     double Airspeed_Indicated;//:2.7157802833244205E-4
 
-    @Override
-    public String toString() {
-        return "VarResult{" +
-                "PLANE_ALTITUDE=" + PLANE_ALTITUDE +
-                ", PLANE_LATITUDE=" + PLANE_LATITUDE +
-                ", PLANE_LONGITUDE=" + PLANE_LONGITUDE +
-                ", HEADING_INDICATOR=" + HEADING_INDICATOR +
-                ", Airspeed_Indicated=" + Airspeed_Indicated +
-                ", FLAPS_HANDLE_INDEX=" + FLAPS_HANDLE_INDEX +
-                ", FLAP_POSITION_SET=" + FLAP_POSITION_SET +
-                ", AMBIENT_PRECIP_RATE=" + AMBIENT_PRECIP_RATE +
-                ", AMBIENT_WIND_DIRECTION=" + AMBIENT_WIND_DIRECTION +
-                ", AMBIENT_WIND_VELOCITY=" + AMBIENT_WIND_VELOCITY +
-                ", LIGHT_NAV=" + LIGHT_NAV +
-                ", GEAR_POSITION=" + GEAR_POSITION +
-                ", BRAKE_INDICATOR=" + BRAKE_INDICATOR +
-                '}';
+    public double getPLANE_HEADING_DEGREES_GYRO() {
+        return PLANE_HEADING_DEGREES_GYRO;
+    }
+
+    public void setPLANE_HEADING_DEGREES_GYRO(double PLANE_HEADING_DEGREES_GYRO) {
+        this.PLANE_HEADING_DEGREES_GYRO = PLANE_HEADING_DEGREES_GYRO;
     }
 
     public int getBRAKE_INDICATOR() {
@@ -141,4 +122,23 @@ public class VarResult {
     int GEAR_POSITION;//:1
 
     int BRAKE_INDICATOR;
+
+    @Override
+    public String toString() {
+        return "VarResult{" +
+                "PLANE_ALTITUDE=" + PLANE_ALTITUDE +
+                ", PLANE_LATITUDE=" + PLANE_LATITUDE +
+                ", PLANE_LONGITUDE=" + PLANE_LONGITUDE +
+                ", PLANE_HEADING_DEGREES_GYRO=" + PLANE_HEADING_DEGREES_GYRO +
+                ", Airspeed_Indicated=" + Airspeed_Indicated +
+                ", FLAPS_HANDLE_INDEX=" + FLAPS_HANDLE_INDEX +
+                ", FLAP_POSITION_SET=" + FLAP_POSITION_SET +
+                ", AMBIENT_PRECIP_RATE=" + AMBIENT_PRECIP_RATE +
+                ", AMBIENT_WIND_DIRECTION=" + AMBIENT_WIND_DIRECTION +
+                ", AMBIENT_WIND_VELOCITY=" + AMBIENT_WIND_VELOCITY +
+                ", LIGHT_NAV=" + LIGHT_NAV +
+                ", GEAR_POSITION=" + GEAR_POSITION +
+                ", BRAKE_INDICATOR=" + BRAKE_INDICATOR +
+                '}';
+    }
 }
