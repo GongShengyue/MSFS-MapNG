@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -43,6 +44,8 @@ public class FlightController {
         list.add(new VarEntity("LIGHT NAV", "Bool", SimConnectDataType.FLOAT64));
         list.add(new VarEntity("GEAR POSITION", "enum", SimConnectDataType.INT32));
         list.add(new VarEntity("BRAKE INDICATOR","Position",SimConnectDataType.INT32));
+        list.add(new VarEntity("VERTICAL SPEED","Feet per second",SimConnectDataType.INT32));
+        list.add(new VarEntity("SURFACE TYPE","enum",SimConnectDataType.INT32));
 
         try {
             Thread t = new DataThread();
@@ -58,6 +61,8 @@ public class FlightController {
             System.out.println(Thread.currentThread().toString());
             try {
                 GetVariable.getVarResult(list);
+            } catch (FileNotFoundException e){
+                System.out.println("Waiting for the flight simulator...");
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }

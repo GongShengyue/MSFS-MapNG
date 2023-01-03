@@ -166,6 +166,8 @@ public class GetVariable {
 			varResult.setLIGHT_NAV(e.getDataFloat64());
 			varResult.setGEAR_POSITION(e.getDataInt32());
 			varResult.setBRAKE_INDICATOR(e.getDataInt32());
+			varResult.setVERTICAL_SPEED(e.getDataInt32());
+			varResult.setSURFACE_TYPE(e.getDataInt32());
 			System.out.println(varResult.toString());
 			}
 		});

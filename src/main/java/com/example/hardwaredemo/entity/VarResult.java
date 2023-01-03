@@ -1,8 +1,9 @@
 package com.example.hardwaredemo.entity;
 
 public class VarResult {
+    /**飞机海拔**/
     double PLANE_ALTITUDE;
-
+    /**飞机纬度**/
     double PLANE_LATITUDE;//:4.0717417393529493E-4
 
     public double getPLANE_ALTITUDE() {
@@ -119,9 +120,57 @@ public class VarResult {
     double AMBIENT_WIND_DIRECTION;//:270.0
     double AMBIENT_WIND_VELOCITY;//:1.0000025236117378
     double LIGHT_NAV;//:0.0
+
+    public int getSURFACE_TYPE() {
+        return SURFACE_TYPE;
+    }
+
+    public void setSURFACE_TYPE(int SURFACE_TYPE) {
+        this.SURFACE_TYPE = SURFACE_TYPE;
+    }
+
+    /**地球表面类型**/
+    int SURFACE_TYPE;
+/*    0 = 混凝土
+1 = 草
+2 = 水
+3 = Grass_bumpy
+4 = 沥青
+5 = Short_grass
+6 = Long_grass
+7 = Hard_turf
+8 = 雪
+9 = 冰
+10 = 城市
+11 = 森林
+12 = 泥土
+13 = 珊瑚
+14 = 砾石
+15 = Oil_treated
+16 = Steel_mats
+17 = 沥青
+18 = 砖
+19 =碎石
+20 = 木板
+21 = 沙
+22 = 页岩
+23 = 柏油路面
+
+24 = Wright_flyer_track*/
     int GEAR_POSITION;//:1
 
     int BRAKE_INDICATOR;
+
+    double VERTICAL_SPEED;
+
+    public double getVERTICAL_SPEED() {
+        return VERTICAL_SPEED;
+    }
+
+    public void setVERTICAL_SPEED(double VERTICAL_SPEED) {
+        this.VERTICAL_SPEED = VERTICAL_SPEED;
+    }
+
 
     @Override
     public String toString() {
@@ -137,8 +186,10 @@ public class VarResult {
                 ", AMBIENT_WIND_DIRECTION=" + AMBIENT_WIND_DIRECTION +
                 ", AMBIENT_WIND_VELOCITY=" + AMBIENT_WIND_VELOCITY +
                 ", LIGHT_NAV=" + LIGHT_NAV +
+                ", SURFACE_TYPE=" + SURFACE_TYPE +
                 ", GEAR_POSITION=" + GEAR_POSITION +
                 ", BRAKE_INDICATOR=" + BRAKE_INDICATOR +
+                ", VERTICAL_SPEED=" + VERTICAL_SPEED +
                 '}';
     }
 }
