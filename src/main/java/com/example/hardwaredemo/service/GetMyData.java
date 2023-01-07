@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 获取我需要的文件
+ * 获取我需要的飞行数据
  */
 public class GetMyData extends Thread {
     private static List<VarEntity> list = new ArrayList<>();

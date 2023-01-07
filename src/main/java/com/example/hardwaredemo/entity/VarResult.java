@@ -6,6 +6,39 @@ public class VarResult {
     /**飞机纬度**/
     double PLANE_LATITUDE;//:4.0717417393529493E-4
 
+    double PLANE_LONGITUDE;//:0.013974632908878046
+    double PLANE_HEADING_DEGREES_GYRO;
+    double Airspeed_Indicated;//:2.7157802833244205E-4
+    double FLAPS_HANDLE_INDEX;//:0.0
+    double FLAP_POSITION_SET;//:0.0
+    double AMBIENT_PRECIP_RATE;//:0.0
+    double AMBIENT_WIND_DIRECTION;//:270.0
+    double AMBIENT_WIND_VELOCITY;//:1.0000025236117378
+    double LIGHT_NAV;//:0.0
+    /**地球表面类型**/
+    int SURFACE_TYPE;
+    public int getSURFACE_TYPE() {
+        return SURFACE_TYPE;
+    }
+
+    public void setSURFACE_TYPE(int SURFACE_TYPE) {
+        this.SURFACE_TYPE = SURFACE_TYPE;
+    }
+    public double getPLANE_HEADING_DEGREES_GYRO() {
+        return PLANE_HEADING_DEGREES_GYRO;
+    }
+
+    public void setPLANE_HEADING_DEGREES_GYRO(double PLANE_HEADING_DEGREES_GYRO) {
+        this.PLANE_HEADING_DEGREES_GYRO = PLANE_HEADING_DEGREES_GYRO;
+    }
+
+    public int getBRAKE_INDICATOR() {
+        return BRAKE_INDICATOR;
+    }
+
+    public void setBRAKE_INDICATOR(int BRAKE_INDICATOR) {
+        this.BRAKE_INDICATOR = BRAKE_INDICATOR;
+    }
     public double getPLANE_ALTITUDE() {
         return PLANE_ALTITUDE;
     }
@@ -94,43 +127,6 @@ public class VarResult {
         this.GEAR_POSITION = GEAR_POSITION;
     }
 
-    double PLANE_LONGITUDE;//:0.013974632908878046
-    double PLANE_HEADING_DEGREES_GYRO;
-    double Airspeed_Indicated;//:2.7157802833244205E-4
-
-    public double getPLANE_HEADING_DEGREES_GYRO() {
-        return PLANE_HEADING_DEGREES_GYRO;
-    }
-
-    public void setPLANE_HEADING_DEGREES_GYRO(double PLANE_HEADING_DEGREES_GYRO) {
-        this.PLANE_HEADING_DEGREES_GYRO = PLANE_HEADING_DEGREES_GYRO;
-    }
-
-    public int getBRAKE_INDICATOR() {
-        return BRAKE_INDICATOR;
-    }
-
-    public void setBRAKE_INDICATOR(int BRAKE_INDICATOR) {
-        this.BRAKE_INDICATOR = BRAKE_INDICATOR;
-    }
-
-    double FLAPS_HANDLE_INDEX;//:0.0
-    double FLAP_POSITION_SET;//:0.0
-    double AMBIENT_PRECIP_RATE;//:0.0
-    double AMBIENT_WIND_DIRECTION;//:270.0
-    double AMBIENT_WIND_VELOCITY;//:1.0000025236117378
-    double LIGHT_NAV;//:0.0
-
-    public int getSURFACE_TYPE() {
-        return SURFACE_TYPE;
-    }
-
-    public void setSURFACE_TYPE(int SURFACE_TYPE) {
-        this.SURFACE_TYPE = SURFACE_TYPE;
-    }
-
-    /**地球表面类型**/
-    int SURFACE_TYPE;
 /*    0 = 混凝土
 1 = 草
 2 = 水

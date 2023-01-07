@@ -140,12 +140,14 @@ public class GetVariable {
 		DispatcherTask dt = new DispatcherTask(sc);
 		dt.addOpenHandler(new OpenHandler(){
 			public void handleOpen(SimConnect sender, RecvOpen e) {
-				System.out.println("Connected to " + e.getApplicationName());
+//				System.out.println("Connected to " + e.getApplicationName());
+				System.out.println("Connect success!");
 			}
 		});
 		dt.addExceptionHandler(new ExceptionHandler(){
 			public void handleException(SimConnect sender, RecvException e) {
 				System.out.println("Exception (" + e.getException() +") packet " + e.getSendID());
+				System.out.println("连接失败...!!!");
 			}
 		});
 
@@ -168,7 +170,6 @@ public class GetVariable {
 			varResult.setBRAKE_INDICATOR(e.getDataInt32());
 			varResult.setVERTICAL_SPEED(e.getDataInt32());
 			varResult.setSURFACE_TYPE(e.getDataInt32());
-			System.out.println(varResult.toString());
 			}
 		});
 

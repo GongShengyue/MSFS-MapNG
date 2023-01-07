@@ -4,12 +4,12 @@ import com.example.hardwaredemo.entity.VarEntity;
 import com.example.hardwaredemo.entity.VarResult;
 import com.example.hardwaredemo.service.GetVariable;
 import flightsim.simconnect.SimConnectDataType;
-
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -46,11 +46,10 @@ public class FlightController {
         list.add(new VarEntity("BRAKE INDICATOR","Position",SimConnectDataType.INT32));
         list.add(new VarEntity("VERTICAL SPEED","Feet per second",SimConnectDataType.INT32));
         list.add(new VarEntity("SURFACE TYPE","enum",SimConnectDataType.INT32));
-
         try {
             Thread t = new DataThread();
             t.start();
-            sleep(1001);
+            sleep(1000);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -58,13 +57,16 @@ public class FlightController {
     class DataThread extends Thread{
         @Override
         public void run(){
-            System.out.println(Thread.currentThread().toString());
+//            System.out.println(Thread.currentThread().toString());
             try {
                 GetVariable.getVarResult(list);
             } catch (FileNotFoundException e){
-                System.out.println("Waiting for the flight simulator...");
-            } catch (Exception e) {
-                throw new RuntimeException(e);
+                System.out.println("Please start Microsoft Flight Simulator 2020 and reopen this program");
+            } catch (IOException e){
+                System.out.println("Please start Microsoft Flight Simulator 2020 and reopen this program");
+            }
+            catch (Exception e) {
+                e.printStackTrace();
             }
 
         }
