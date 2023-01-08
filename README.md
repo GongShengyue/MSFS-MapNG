@@ -4,9 +4,9 @@
 
 This program is the server side of MSFS Map NG application on Google Play.It is 
 
-created with 
+created with [Jsimconnect](https://github.com/mharj/jsimconnect)
 
-[jsimconnect]: https://github.com/mharj/jsimconnect
+
 
 
 
