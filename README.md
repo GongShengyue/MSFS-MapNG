@@ -13,7 +13,7 @@ created with [Jsimconnect](https://github.com/mharj/jsimconnect)
 
 # Installing
 
-- Download the Server.zip file from releases on the right side of the page
+- [Download the Server.zip file](https://github.com/GongShengyue/MSFS-MapNG-Server/releases/tag/v0.1.0) from releases on the right side of the page
 - Extract the contents to a location of your choosing.
 - Start Microsoft Flight Simulator 2020
 - Run MsfsMapNG Server.exe
