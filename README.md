@@ -1,4 +1,5 @@
 
+![image](https://github.com/GongShengyue/MSFS-MapNG-Server/blob/main/icon_small.png)
 
 # About
 
