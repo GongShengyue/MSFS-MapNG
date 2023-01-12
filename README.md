@@ -1,4 +1,3 @@
-
 ![image](https://github.com/GongShengyue/MSFS-MapNG-Server/blob/main/icon_small%20-github.png)
 
 # About
@@ -24,3 +23,12 @@ created with [Jsimconnect](https://github.com/mharj/jsimconnect)
 # Note
 
 The app does not work with XBOX msfs.Only  PC game is supported.
+
+# Features under development
+
+- [ ] add airspace and other aviation info on the map
+- [ ] airport search and 3D airport preview
+- [ ] Altitude profile display
+- [ ] import flight plan from simbrief
+- [ ] Reduce the size of the server program
+
