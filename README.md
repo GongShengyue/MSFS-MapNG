@@ -6,6 +6,8 @@ This program is the server side of MSFS Map NG application on Google Play.It is
 
 created with [Jsimconnect](https://github.com/mharj/jsimconnect)
 
+I have used some msfs companion app but most of their maps made me uncomfortable. When i use other similar apps, **the plane always jump from one point to another**. And the labels in the map are not clear enough. So I decide to develop this app.
+
 ##### Features of the app:
 
 - smooth map,full 120fps animation,may be the  smoothest similar app,even smoother than the MFD in your game. After all,most of the smart phones support high refresh rate.
@@ -34,6 +36,4 @@ The app does not work with XBOX msfs. Only  PC game is supported.
 - [ ] Altitude profile display
 - [ ] import flight plan from simbrief
 - [ ] Reduce the size of the server program
-
-
 
