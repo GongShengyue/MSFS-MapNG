@@ -10,14 +10,38 @@ MSFS MAP NG is the next generation companion map of Microsoft Flight Simulator o
 - **9** different map style(satellite,outdoor,street...)
 - Terrain display(dynamic change)
 - simple direct to function
+- No server needed,just config when the first time you use it! After that when the next time you want to use this app,the only thing you need to do is to open you phone and click a connect button.you don't need to quit the game to open server program or something else. 
+
 
 # Installing
 
 - Click here to download the app <a href='https://play.google.com/store/apps/details?id=com.gsy.msfs_mapbox_kotlin&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' height='50%' width='50%' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+
 - Start Microsoft Flight Simulator 2020
+
 - Get your WLAN ip address
+
+- Find the SimConnect.xml in the Microsoft files, usually somewhere here:**C:\Users\[user name]\AppData\Local\Packages\Microsoft.FlightSimulator_8wekyb3d8bbwe\LocalCache** Add a new connection to that xml file:
+
+```
+<SimConnect.Comm>
+<Descr>Global IP Port</Descr>
+<Disabled>False</Disabled>
+<Protocol>IPv4</Protocol>
+<Scope>global</Scope>
+<Address>192.168.0.66</Address> !!Set the IP of your gaming machine
+<MaxClients>64</MaxClients>
+<Port>7421</Port> 
+<MaxRecvSize>4096</MaxRecvSize>
+<DisableNagle>False</DisableNagle>
+</SimConnect.Comm>
+```
+
+
+
 - Open the Msfs Map NG appication on your phone and enter your ip address(*make sure your phone and computer connect to same network*!)
--  Click save button and enjoy your fly!
+
+- Click save button and enjoy your fly!
 
 # Note
 
