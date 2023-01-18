@@ -2,25 +2,19 @@
 
 # About
 
-This program is the server side of MSFS Map NG application on Google Play.It is 
-
-created with [Jsimconnect](https://github.com/mharj/jsimconnect)
-
-I have used some msfs companion app but most of their maps made me uncomfortable. When i use other similar apps, **the plane always jump from one point to another**. And the labels in the map are not clear enough. So I decide to develop this app.
+MSFS MAP NG is the next generation companion map of Microsoft Flight Simulator on the mobile device.
 
 ##### Features of the app:
 
 - smooth map,full 120fps animation,may be the  smoothest similar app,even smoother than the MFD in your game. After all,most of the smart phones support high refresh rate.
-- 8 different map style(satellite,outdoor,street...)
-- Terrain display,No more worries when flying in mountains or cloudy weather！
+- **9** different map style(satellite,outdoor,street...)
+- Terrain display(dynamic change)
 - simple direct to function
 
 # Installing
 
-- [Download the Server.zip file](https://github.com/GongShengyue/MSFS-MapNG-Server/releases/tag/v0.1.0) from releases on the right side of the page
-- Extract the contents to a location of your choosing.
+- Click here to download the app <a href='https://play.google.com/store/apps/details?id=com.gsy.msfs_mapbox_kotlin&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' height='50%' width='50%' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 - Start Microsoft Flight Simulator 2020
-- Run MsfsMapNG Server.exe
 - Get your WLAN ip address
 - Open the Msfs Map NG appication on your phone and enter your ip address(*make sure your phone and computer connect to same network*!)
 -  Click save button and enjoy your fly!
@@ -31,9 +25,8 @@ The app does not work with XBOX msfs. Only  PC game is supported.
 
 # Features under development
 
-- [ ] add airspace and other aviation info on the map
+- [x] add airspace and other aviation info on the map
 - [ ] airport search and 3D airport preview
 - [ ] Altitude profile display
 - [ ] import flight plan from simbrief
 - [ ] Reduce the size of the server program
-
