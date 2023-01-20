@@ -15,13 +15,11 @@ MSFS MAP NG is the next generation companion map of Microsoft Flight Simulator o
 
 # Installing
 
-- Click here to download the app <a href='https://play.google.com/store/apps/details?id=com.gsy.msfs_mapbox_kotlin&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' height='50%' width='50%' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+1.Click here to download the app <a href='https://play.google.com/store/apps/details?id=com.gsy.msfs_mapbox_kotlin&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' height='50%' width='50%' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
-- Start Microsoft Flight Simulator 2020
+2.Get your WLAN ip address
 
-- Get your WLAN ip address
-
-- Find the SimConnect.xml in the Microsoft files, usually somewhere here:**C:\Users\[user name]\AppData\Local\Packages\Microsoft.FlightSimulator_8wekyb3d8bbwe\LocalCache** Add a new connection to that xml file:
+3.Find the SimConnect.xml in the Microsoft files, usually somewhere here:**C:\Users\[user name]\AppData\Local\Packages\Microsoft.FlightSimulator_8wekyb3d8bbwe\LocalCache** Add a new connection to that xml file:
 
 ```
 <SimConnect.Comm>
@@ -37,11 +35,11 @@ MSFS MAP NG is the next generation companion map of Microsoft Flight Simulator o
 </SimConnect.Comm>
 ```
 
+4.Start Microsoft Flight Simulator 2020
 
+5.Open the Msfs Map NG appication on your phone and enter your ip address(*make sure your phone and computer connect to same network*!)
 
-- Open the Msfs Map NG appication on your phone and enter your ip address(*make sure your phone and computer connect to same network*!)
-
-- Click save button and enjoy your fly!
+6.Click save button and enjoy your fly!
 
 # Note
 
