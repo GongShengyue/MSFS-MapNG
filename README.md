@@ -1,4 +1,8 @@
-![image](https://github.com/GongShengyue/MSFS-MapNG-Server/blob/main/icon_small%20-github.png)
+![image](https://github.com/GongShengyue/MSFS-MapNG-Server/blob/main/icon_small%20-github.png)<img src="https://github.com/GongShengyue/MSFS-MapNG/blob/main/xuanchuan1.png" width="250px">
+
+<img src="https://github.com/GongShengyue/MSFS-MapNG/blob/main/xuanchuan3.png" width="500px">
+
+
 
 # About
 
@@ -15,7 +19,9 @@ MSFS MAP NG is the next generation companion map of Microsoft Flight Simulator o
 
 # Installing
 
-1.Click here to download the app <a href='https://play.google.com/store/apps/details?id=com.gsy.msfs_mapbox_kotlin&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' height='50%' width='50%' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+1.Click here to download the app 
+
+<a href='https://play.google.com/store/apps/details?id=com.gsy.msfs_mapbox_kotlin&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play'  width='250' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
 2.Get your WLAN ip address
 
