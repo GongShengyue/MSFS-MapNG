@@ -51,4 +51,3 @@ The app does not work with XBOX msfs. Only  PC game is supported.
 - [ ] airport search and 3D airport preview
 - [ ] Altitude profile display
 - [ ] import flight plan from simbrief
-- [ ] Reduce the size of the server program
