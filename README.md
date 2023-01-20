@@ -39,7 +39,7 @@ MSFS MAP NG is the next generation companion map of Microsoft Flight Simulator o
 
 5.Open the Msfs Map NG appication on your phone and enter your ip address(*make sure your phone and computer connect to same network*!)
 
-6.Click save button and enjoy your fly!
+6.Click CONNECT button and enjoy your fly!
 
 # Note
 
