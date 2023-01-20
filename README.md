@@ -7,7 +7,7 @@ MSFS MAP NG is the next generation companion map of Microsoft Flight Simulator o
 ##### Features of the app:
 
 - smooth map,full 120fps animation,may be the  smoothest similar app,even smoother than the MFD in your game. After all,most of the smart phones support high refresh rate.
-- **9** different map style(satellite,outdoor,street...)
+- **9** different map styles(satellite,outdoor,street...)
 - Terrain display(dynamic change)
 - simple direct to function
 - No server needed,just config when the first time you use it! After that when the next time you want to use this app,the only thing you need to do is to open you phone and click a connect button.you don't need to quit the game to open server program or something else. 
