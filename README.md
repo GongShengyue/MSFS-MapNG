@@ -14,7 +14,7 @@ MSFS MAP NG is the next generation companion map of Microsoft Flight Simulator o
 - **9** different map styles(satellite,outdoor,street...)
 - Terrain display(dynamic change)
 - simple direct to function
-- No server needed,just config when the first time you use it! After that when the next time you want to use this app,the only thing you need to do is to open your phone and click a connect button.you don't need to quit the game to open server program or anything else. 
+- **No server needed** ,just config when the first time you use it! After that when the next time you want to use this app,the only thing you need to do is to open your phone and click a connect button.you don't need to quit the game to open server program or anything else. 
 
 
 # Installing
