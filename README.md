@@ -1,4 +1,4 @@
-![image](https://github.com/GongShengyue/MSFS-MapNG-Server/blob/main/icon_small%20-github.png)<img src="https://github.com/GongShengyue/MSFS-MapNG/blob/main/xuanchuan1.png" width="250px">
+![image](https://github.com/GongShengyue/MSFS-MapNG-Server/blob/main/icon_small%20-github.png)
 
 <img src="https://github.com/GongShengyue/MSFS-MapNG/blob/main/xuanchuan3.png" width="500px">
 
@@ -15,6 +15,7 @@ MSFS MAP NG is the next generation companion map of Microsoft Flight Simulator o
 - Terrain display(dynamic change)
 - simple direct to function
 - **No server needed** ,just config when the first time you use it! After that when the next time you want to use this app,the only thing you need to do is to open your phone and click a connect button.you don't need to quit the game to open server program or anything else. 
+You can watch video on Youtube :https://www.youtube.com/watch?v=Lvgc5pio3d8
 
 
 # Installing
