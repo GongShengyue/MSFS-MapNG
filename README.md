@@ -23,9 +23,11 @@ MSFS MAP NG is the next generation companion map of Microsoft Flight Simulator o
 
 <a href='https://play.google.com/store/apps/details?id=com.gsy.msfs_mapbox_kotlin&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play'  width='250' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
-2.Download [MSFS MAP NG server](https://github.com/GongShengyue/MSFS-MapNG/releases/download/v1.0.1/MSFS.MAP.NG.server.zip) 
 
-4.Start Microsoft Flight Simulator 2020
+
+2.Start Microsoft Flight Simulator 2020
+
+3.Download [MSFS MAP NG server](https://github.com/GongShengyue/MSFS-MapNG/releases/download/v1.0.1/MSFS.MAP.NG.server.zip) ,unzip MSFS.MAP.NG.Server.zip(*do not seperate MSFS MAP NG Server.exe and Simconnect.dll*)
 
 5.Start MSFS MAP NG server and get your ip address(*When running for the first time, the computer firewall may ask to allow access to the network, you must agree*)
 
