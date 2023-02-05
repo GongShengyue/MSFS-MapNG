@@ -33,7 +33,7 @@ MSFS MAP NG is the next generation companion map of Microsoft Flight Simulator o
 
 2.Start Microsoft Flight Simulator 2020
 
-3.Download [MSFS MAP NG server](https://github.com/GongShengyue/MSFS-MapNG/releases/download/v1.0.2/MSFS.MAP.NG.Server.zip) ,unzip MSFS.MAP.NG.Server.zip(*do not seperate MSFS MAP NG Server.exe and Simconnect.dll*)
+3.Download [MSFS MAP NG server](https://github.com/GongShengyue/MSFS-MapNG/releases/download/v1.0.2/MSFS.MAP.NG.Server.zip) ,unzip MSFS.MAP.NG.Server.zip
 
 5.Start MSFS MAP NG server and get your ip address.
 
