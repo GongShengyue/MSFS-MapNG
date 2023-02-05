@@ -11,9 +11,15 @@ MSFS MAP NG is the next generation companion map of Microsoft Flight Simulator o
 ##### Features of the app:
 
 - smooth map,full 120fps animation,may be the  smoothest similar app,even smoother than the MFD in your game. After all,most of the smart phones support high refresh rate.
+
 - **9** different map styles(satellite,outdoor,street...)
+
 - Terrain display(dynamic change)
+
 - simple flight plan
+
+  
+
   You can watch video on Youtube :https://www.youtube.com/watch?v=Lvgc5pio3d8
 
 
@@ -29,9 +35,11 @@ MSFS MAP NG is the next generation companion map of Microsoft Flight Simulator o
 
 3.Download [MSFS MAP NG server](https://github.com/GongShengyue/MSFS-MapNG/releases/download/v1.0.2/MSFS.MAP.NG.Server.zip) ,unzip MSFS.MAP.NG.Server.zip(*do not seperate MSFS MAP NG Server.exe and Simconnect.dll*)
 
-5.Start MSFS MAP NG server and get your ip address(*When running for the first time, the computer firewall may ask to allow access to the network, you must agree*)
+5.Start MSFS MAP NG server and get your ip address.
 
 6.Open the MSFS MAP NG appication on your phone and enter your ip address(*make sure your phone and computer connect to same network*!)
+
+If the connection fails, there may be a problem with the firewall, you should add port number **7788** to the **inbound rules of the firewall** or just close the firewall.
 
 7.Click CONNECT button and enjoy your fly!
 
