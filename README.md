@@ -17,6 +17,7 @@ MSFS MAP NG is the next generation companion map of Microsoft Flight Simulator o
 - Terrain display(dynamic change)
 
 - simple flight plan
+- airport search and 3D airport preview
 
   
 
