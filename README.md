@@ -51,6 +51,5 @@ The app does not work with XBOX msfs. Only  PC game is supported.
 # Features under development
 
 - [x] add airspace and other aviation info on the map
-- [ ] airport search and 3D airport preview
 - [ ] Altitude profile display
 - [ ] import flight plan from simbrief
