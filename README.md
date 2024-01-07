@@ -19,6 +19,7 @@ MSFS MAP NG is the next generation companion map of Microsoft Flight Simulator o
 - simple flight plan
 - airport search and 3D airport preview
 - Altitude profile display
+-import flight plan from simbrief
   
 
   You can watch video on Youtube :https://www.youtube.com/watch?v=Lvgc5pio3d8
@@ -48,7 +49,3 @@ If the connection fails, there may be a problem with the firewall, you should ad
 
 The app does not work with XBOX msfs. Only  PC game is supported.
 
-# Features under development
-
-- [x] add airspace and other aviation info on the map
-- [ ] import flight plan from simbrief
