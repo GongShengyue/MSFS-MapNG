@@ -18,7 +18,7 @@ MSFS MAP NG is the next generation companion map of Microsoft Flight Simulator o
 - simple flight plan
 - airport search and 3D airport preview
 - Altitude profile display
--import flight plan from simbrief
+- import flight plan from simbrief
   
 
   You can watch video on Youtube :https://www.youtube.com/watch?v=Lvgc5pio3d8
