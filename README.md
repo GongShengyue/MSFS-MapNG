@@ -1,4 +1,3 @@
-![image](https://github.com/GongShengyue/MSFS-MapNG-Server/blob/main/icon_small%20-github.png)
 
 <img src="https://github.com/GongShengyue/MSFS-MapNG/blob/main/xuanchuan3.png" width="500px">
 
